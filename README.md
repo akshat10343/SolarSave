@@ -18,3 +18,18 @@ Built with:
 - OpenCage Geocoder API
 - NREL Solar API
 
+
+## Run it locally
+
+```bash
+# 1. API server
+cd server
+npm install
+cp .env.example .env   # add your NREL and OpenCage API keys
+node index.js          # runs on http://localhost:5001
+
+# 2. React client (in a second terminal)
+cd client
+npm install
+npm start
+```
